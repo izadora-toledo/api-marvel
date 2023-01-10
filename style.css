@@ -1,0 +1,129 @@
+@import url('https://fonts.cdnfonts.com/css/bebas');
+
+body {margin: 0;}
+
+form#form_herois {
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+#form_herois .form-inline {
+  display: flex; 
+  justify-content: center; 
+}
+
+#form_herois .col-md-4 {
+  text-align: center; 
+}
+
+#form_herois .card {
+  margin: 0 auto; 
+  display: block;
+}
+
+label.lista_personagens {
+  display: flex;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+select#lista_personagens {
+  width: 300px; 
+  height: 50px; 
+  border-radius: 20px;
+  box-shadow: 0 0 5px #333;
+  font-size: 20px;
+  display: block;
+}
+
+select#lista_personagens option {
+  text-align: center; 
+  font-size: 20px;
+  display: block;
+}
+
+button#buscar_historias {
+  width: 200px; 
+  height: 50px; 
+  border-radius: 20px;
+}
+
+h3 {
+  font-family: Roboto;
+  text-align: center;
+  padding: 60px;
+  font-size: 30px;
+}
+
+p#descricao_heroi {
+  text-align: justify;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+ul.topnav li {float: center;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 100px;
+  font-family: bebas;
+}
+
+ul.topnav li.home a.home {
+  display: flex;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: bebas;
+  border-radius:50px;
+  border: solid;
+  width: 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+ul.topnav li a.active {background-color: #d30000;}
+
+.form-control {
+    display: flex;   
+    margin: 0 0 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+.container {
+  text-align: center;
+}
+
+#div_card_stories {
+  display: block;
+  justify-content: center;
+}
+
+#div_card_stories p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 720px) { 
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+}
