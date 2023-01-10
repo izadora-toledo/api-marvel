@@ -10,8 +10,13 @@ $(document).ready(function() {
             data: param                  
         }).done(function(result){           
             $('#div_card').show();
-            $('#descricao_heroi').html(result.descricao); 
-            $("#titulo_heroi").html(result.nome);
+            if(result.descricao != ''){
+                $('#descricao_heroi').html(result.descricao); 
+            } else {
+                $('#descricao_heroi').html('Esse herói mão tem descrição.');
+            }
+            $("#titulo_heroi").html(result.nome);   
+            $("#imagem").attr("src", result.imagem);
             $("#lista_personagens").attr("required", "req"); 
         });
         return false;  
