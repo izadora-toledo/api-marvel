@@ -4,7 +4,7 @@
 $servidor = "localhost";
 $user = "root";
 $senha = "";
-$conexao = new mysqli('localhost', 'root', '');
+$conexao = new mysqli($servidor, $user, $senha);
 
 if ($conexao->connect_errno) {
     printf("Conexão falhou: %s\n", $conexao->connect_error);
@@ -24,7 +24,7 @@ if ($result->num_rows == 0) {
     $conexao->select_db("marvel");
 }
 
-$conexao = new mysqli("localhost", "root", "", "marvel");
+$conexao = new mysqli($servidor, $user, $senha, "marvel");
 
 if ($conexao->connect_errno) {
     printf("Connect failed: %s\n", $conexao->connect_error);
