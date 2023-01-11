@@ -7,7 +7,7 @@
             
             $herois = "SELECT * FROM heroi WHERE id = " . $_POST['id_heroi']; 
             $queryHerois = $conexao->query($herois);         
-            while($return = mysqli_fetch_assoc($queryHerois)){
+            while ($return = mysqli_fetch_assoc($queryHerois)) {
                 echo json_encode($return);          
             }       
         break;

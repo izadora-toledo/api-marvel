@@ -13,7 +13,7 @@ $(document).ready(function() {
             if(result.descricao != ''){
                 $('#descricao_heroi').html(result.descricao); 
             } else {
-                $('#descricao_heroi').html('Esse herói mão tem descrição.');
+                $('#descricao_heroi').html('Esse herói mão tem descrição');
             }
             $("#titulo_heroi").html(result.nome);   
             $("#imagem").attr("src", result.imagem);

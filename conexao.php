@@ -16,9 +16,9 @@ $result = $conexao->query("SHOW DATABASES LIKE 'marvel'");
 if ($result->num_rows == 0) {
     $sql = "CREATE DATABASE marvel";
     if ($conexao->query($sql) === TRUE) {
-        echo "Banco de dados marvel criado com sucesso!";
+        $return = "Banco de dados marvel criado com sucesso!";
     } else {
-        echo "Erro ao criar banco: " . $conexao->error;
+        $error = "Erro ao criar banco: " . $conexao->error;
     }
 } else {
     $conexao->select_db("marvel");
@@ -41,7 +41,7 @@ $tabelaHerois = "CREATE TABLE heroi(
   )";
 
 if ($conexao->query($tabelaHerois) === true) {
-    $error = "Tabela heroi com sucesso!";
+    $return = "Tabela heroi com sucesso!";
 } else {
     $error = "Erro na criação da tabela ou tabela já existente: " . $conexao->error;
 }
@@ -55,7 +55,7 @@ $tabelaStories = "CREATE TABLE stories(
   )";
 
 if ($conexao->query($tabelaStories) === true) {
-    $error = "Tabela storie criada com sucesso!";
+    $return = "Tabela storie criada com sucesso!";
 } else {
     $error = "Erro na criação da tabela ou tabela já existente: " . $conexao->error;
 }

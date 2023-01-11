@@ -1,4 +1,5 @@
 <?php
+
 class Insert {    
     
     public static function inserir()
@@ -12,7 +13,7 @@ class Insert {
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $personagens = curl_exec($curl);
         $data = json_decode($personagens, true);
-  
+    
         foreach ($data['data']['results'] as $key => $item) {                 
             $img_data = $item['thumbnail']['path'].'.'.$item['thumbnail']['extension'];
 
@@ -51,7 +52,7 @@ class Insert {
                 }                 
             }         
         } else {
-            echo "Não existe heróis no banco!";
+            echo "Não existem heróis no banco!";
         } 
     }
 }
