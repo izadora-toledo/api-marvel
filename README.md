@@ -22,7 +22,7 @@
 ![image](https://user-images.githubusercontent.com/121051093/211686623-ef75ff75-6488-45c1-a720-f5624c2dc948.png)
 - Execute o arquivo config.inc e procure por essa frase em específico: $cfg['Servers'][$i]['password'] = ''; e dentro das ASPAS você vai definir sua senha e procure também por: $cfg['Servers'][$i]['user'] = 'root'; e no lugar da palavra root mantendo as aspas, escreva um nome para ser seu usuario e depois é só salvar o arquivo.<br><br><br>
 ## 💻 Como executar a aplicação
-- Acesse no navegador o seu localhost como ensinei: (http://localhost/api-marvel/view/index.php)
+- Acesse no navegador o seu localhost como ensinei: (http://localhost/api-marvel/view/index.php), caso você não está usando a mesma camada de diretório, lembre-se de entrar no arquivo SCRIPT.JS e trocar o campo URL, colocando a URL correta de acordo com o caminho da pasta que contem o arquivo action.php
 - Selecione um herói na lista
 - Depois que ler o nome e a descrição do herói, basta clicar em CONHECER HISTÓRIAS
 - Vai te encaminhar para a tela onde tem todas as histórias daquele herói.
