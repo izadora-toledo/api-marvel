@@ -34,7 +34,7 @@ if (empty($stories->num_rows)) {
 
         <form method="POST" action="stories.php" class="form_heroes">
              <div class="form-inline">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <label class="list-chracteres-label" for="lista_personagens">Selecione um herói</label>       
                     <select class="select-heroes" name="lista_personagens" id="lista_personagens">
                         <option value="0" class="option">-- Lista de heróis --</option>
@@ -52,7 +52,7 @@ if (empty($stories->num_rows)) {
                         <div class="card-body">
                             <h4 for="descricao_heroi" class="description-heroe-title" id="descricao_heroi"></h4>
                             <p type="text" class="description-heroe" id="descricao_heroi" ></p>
-                            <button type="submit" class="button-heroe btn-dark" id="buscar_historias">Conheça suas histórias</button>                        
+                            <button type="submit" class="button-heroe btn-dark" id="buscar_historias">Histórias</button>                        
                         </div>
                     </div>                  
                 </div>               

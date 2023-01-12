@@ -14,9 +14,9 @@ $return_heroi = mysqli_fetch_array($heros);
 </head>
 <body>
     <nav class="menu">
-        <a class="button-back" href="index.php">Voltar para home</a>
         <a class="title-brand" href="#marvel">MARVEL</a>       
     </nav>
+    <a class="button-back" href="index.php">Voltar para home</a>
     <div class="card-history-heroe">
         <h1 class="title-history-heroe"><?php echo !empty($return_heroi['nome']) ? 'Histórias do herói ' . $return_heroi['nome'] : 'Você não selecionou nenhum herói!' ?></h1>
         <?php                         
