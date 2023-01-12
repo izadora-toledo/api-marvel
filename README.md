@@ -41,6 +41,7 @@
 - Consumir a API e buscar os dados pelo nome digitado, para que encontrem qualquer herói.
 - Trazer quadrinhos e séries dos heróis
 - Melhorar o design
+- Melhorar acessibilidade
 
 ## 📝Desenvolvedor
 Meu nome é Izadora Toledo, e foi um prazer para mim construir esta aplicação. 
